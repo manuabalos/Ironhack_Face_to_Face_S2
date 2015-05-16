@@ -1,0 +1,9 @@
+<h1>CONTACT BY LETTER <%= params[:letter] %></h1>
+
+<ul>
+	<% @selected_letter.each do |contact_letter| %>
+		<li>
+		<%= contact_letter.name %>
+		</li>
+	<% end %> 
+</ul>

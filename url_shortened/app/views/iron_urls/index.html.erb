@@ -1,0 +1,9 @@
+<h1> URLs </h1>
+
+	<hr>
+	<% @urls.each do |url| %>
+			<p><b>ID:</b> <%= url.id %></p>
+			<p><b>URL:</b> <%= url.url_name %></p>
+			<p><b>Visits:</b> <%= url.views %> </p>
+			<hr>
+	<% end %>

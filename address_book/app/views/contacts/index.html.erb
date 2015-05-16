@@ -1,0 +1,18 @@
+
+<% ('A'..'Z').each do |letter| %>
+	<a href='/<%= letter %>'> <%= letter %><a/>
+<% end %>
+
+
+<h1> Welcome! All Contacts </h1>
+
+<ul>
+<% @contacts.each do |contact| %>
+	<li><%= contact.id %> - <%= contact.name %></li>
+<% end %>
+</ul>
+
+
+
+
+
